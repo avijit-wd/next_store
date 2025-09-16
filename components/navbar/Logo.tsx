@@ -1,13 +1,14 @@
-import { VscCode } from "react-icons/vsc";
-import { Button } from "../ui/button";
-import Link from "next/link";
+import Link from 'next/link';
+import { Button } from '../ui/button';
+import { VscCode } from 'react-icons/vsc';
 
-export default function Logo() {
+function Logo() {
   return (
-    <Button size={"icon"} asChild>
-      <Link href="/">
-        <VscCode className="h-6 w-6" />
+    <Button size='icon' asChild>
+      <Link href='/'>
+        <VscCode className='w-6 h-6' />
       </Link>
     </Button>
   );
 }
+export default Logo;
